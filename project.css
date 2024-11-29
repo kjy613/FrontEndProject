@@ -1,0 +1,27 @@
+body{
+    text-align: center;
+}
+table {
+    text-align: center;
+}
+
+.red-text {
+    color: red;
+}
+
+.selected {
+    background-color: lightgrey;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+thead, tfoot{
+    font-weight: bold;
+    background-color: beige;
+}
+tbody{
+    background-color: aliceblue;
+}

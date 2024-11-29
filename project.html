@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front End Project</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <h1>Front-End 과제 학점관리 시스템</h1>
+    <h4>202244073 김지연</h4>
+
+    <label for="greadeSelect"></label>
+    <select id="gradeSelect" onchange="loadGradeData()">
+        <option value="1">1학년</option>
+        <option value="2">2학년</option>
+        <option value="3">3학년</option>
+    </select>
+
+
+    <button onclick="addRow()">추가</button>
+    <button onclick="saveData()">저장</button>
+    <button onclick="deleteSelectedRow()">삭제</button>
+
+    <table id="scoreTable" border="1">
+        <thead>
+            <th>이수</th>
+            <th>필수</th>
+            <th>과목명</th>
+            <th>학점</th>
+            <th>출석 점수</th>
+            <th>과제 점수</th>
+            <th>중간고사</th>
+            <th>기말고사</th>
+            <th>총점</th>
+            <th>평균</th>
+            <th>성적</th>
+        </thead>
+        <tbody>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">합계</th>
+                <th id="creditScore">0</th>
+                <th id="attendance">0</th>
+                <th id="hw">0</th>
+                <th id="mid">0</th>
+                <th id="final">0</th>
+                <th id="total_score">0</th>
+                <th id="totalAverage">0</th>
+                <th id="totalGrade">o</th>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="project.js"></script>
+</body>
+</html>
